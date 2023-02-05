@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1 class="calculator_title">Tip Calculator</h1>
+
+  <section class="tip_calculator_container">
+
+    <div class="calculator_input_container">
+
+      <div class="bill_input_container">
+
+        <label for="total_bill">Bill</label>
+
+        <div class="input_container">
+          <input type="number" name="" id="" placeholder="0" class="total_bill">
+          <img src="images/icon-dollar.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="tip_input_container">
+
+        <label for="">Select Tip %</label>
+
+        <div class="get_tip_input_container">
+          <button class="tip_amount" value="0.05">5%</button>
+          <button class="tip_amount" value="0.1">10%</button>
+          <button class="tip_amount" value="0.15">15%</button>
+          <button class="tip_amount" value="0.25">25%</button>
+          <button class="tip_amount" value="0.5">50%</button>
+          <input type="number" class="cutom_tip_amount" placeholder="Custom">
+        </div>
+
+      </div>
+
+      <div class="total_people_container">
+
+        <div class="people_flex">
+          <label for="">Number of People</label>
+          <span class="zero_error">Can't be zero</span>
+        </div>
+
+        <div class="input_container">
+          <input type="number" placeholder="0" class="people_number">
+          <img src="images/icon-person.svg" alt="">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="calculator_result_container">
+
+      <div class="tip_amount_person_container">
+
+        <div class="tip_amount_person_text">
+          <p>Tip Amount</p>
+          <span>/ person</span>
+        </div>
+
+        <p class="pre_preson_result">$<span class="per_person_tip_amount">00.00</span></p>
+
+      </div>
+
+      <div class="tip_amount_person_container">
+
+        <div class="tip_amount_person_text">
+          <p>Total</p>
+          <span>/ person</span>
+        </div>
+
+        <p class="pre_preson_result">$<span class="per_person-total_bill_amount">00.00</span></p>
+        
+      </div>
+
+      <button class="reset_btn">RESET</button>
+
+    </div>
+
+  </section>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
