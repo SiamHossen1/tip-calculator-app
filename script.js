@@ -9,7 +9,6 @@ const allInput = document.querySelectorAll('input')
 const resetBtn = document.querySelector('.reset_btn')
 
 
-
 let tipAmount;
 
 totalPeoples.addEventListener('input',()=>{
@@ -52,6 +51,11 @@ tipAmountBtns.forEach((button,index)=>{
 })
 
 tipAmountBtns[0].click()
+
+totalBill.addEventListener('focusout',()=>{
+    tipAmountBtns[0].click()
+})
+
 
 customTipBtn.addEventListener('focusout',()=>{
     tipAmount = totalBill.value * (customTipBtn.value / 100)
